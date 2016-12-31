@@ -27,7 +27,7 @@ body{
 .mainFrame {
     width: 280px;
     overflow:auto;
-    margin: 40px auto;
+    margin: 20px auto;
     background: #009688;
     padding-bottom: 30px;
     border-radius: 10px;

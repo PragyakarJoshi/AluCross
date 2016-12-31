@@ -22,7 +22,7 @@ $(document).ready(function() {
             spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasClass('o') ||
             spot3.hasClass('o') && spot5.hasClass('o') && spot7.hasClass('o')) {
             alert('Winner: O');
-            $('#message').text("Winner: O");
+            $('#message').text("Player 1 Wins!");
             $('#board li').text("-");
             $('#board li').removeClass('disable');
             $('#board li').removeClass('o');
@@ -37,7 +37,7 @@ $(document).ready(function() {
             spot1.hasClass('x') && spot5.hasClass('x') && spot9.hasClass('x') ||
             spot3.hasClass('x') && spot5.hasClass('x') && spot7.hasClass('x')) {
             alert('Winner: X');
-            $('#message').text("Winner: X");
+            $('#message').text("Player 2 Wins!");
 
             $('#board li').text("-");
             $('#board li').removeClass('disable');
@@ -53,7 +53,7 @@ $(document).ready(function() {
             $('#board li').removeClass('x');
             turns = 0;
         } else if($(this).hasClass('disable')){
-            alert('stop');
+            alert('Cannot perform action. Box is already filled.');
         }else if (turns % 2 == 0) {
             turns++;
             $(this).text(o);
@@ -67,7 +67,7 @@ $(document).ready(function() {
                 spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasClass('o') ||
                 spot3.hasClass('o') && spot5.hasClass('o') && spot7.hasClass('o')) {
                 alert('Winner: O');
-                $('#message').text("Winner: O");
+                $('#message').text("Player 1 Wins!");
 
                 turns = 0;
             }
@@ -84,8 +84,7 @@ $(document).ready(function() {
                 spot1.hasClass('x') && spot5.hasClass('x') && spot9.hasClass('x') ||
                 spot3.hasClass('x') && spot5.hasClass('x') && spot7.hasClass('x')) {
                 alert('Winner: X');
-                $('#message').text("Winner: X");
-
+                $('#message').text("Player 2 Wins!");
                 turns = 0;
             }
         }
@@ -95,8 +94,13 @@ $(document).ready(function() {
         $('#board li').removeClass('disable');
         $('#board li').removeClass('o');
         $('#board li').removeClass('x');
-        $('#message').text("Winner:");
+        $('#message').text("Player 1's turn");
 
         turns = 0;
     });
+    if(turns % 2 == 0 ){
+        $('#message').text("Player 1's turn");
+    } else {
+        $('#message').text("Player 2's turn");
+    }
 });
