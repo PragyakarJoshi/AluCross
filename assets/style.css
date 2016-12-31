@@ -1,0 +1,92 @@
+/*
+     Colors Theme to -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     -o-user-select: none;
+     user-select: none;
+     Dark Primary: #00796B
+     Primary: #009688
+     Light Primary: #B2DFDB
+     Accent: #009688
+     Text Primary: #212121
+     Text Secondary: #757575
+*/
+body{
+    background: #00796B;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+}
+.row{
+    width:100%;
+    padding:0;
+    margin:0;
+}
+.header{
+    margin-top: 30px;
+}
+.mainFrame {
+    width: 280px;
+    overflow:auto;
+    margin: 40px auto;
+    background: #009688;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.075);
+    border-bottom-color: rgba(0,0,0,0.125);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    padding-top: 15px;
+}
+
+#board li{
+    float: left;
+    margin: 8.5px;
+    height: 50px;
+    width: 50px;
+    line-height: 40px;
+    font-size: 55px;
+    background: #00796B;
+    color:#FFFFFF;
+    list-style-type: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+#board li:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+}
+.disabled{
+
+}
+.o{
+    color: rgb(0, 255, 125) !important;
+}
+.x{
+    color: rgb(150, 37, 37) !important;
+}
+.btn-default{
+    background: #00796B;
+    color: #FFFFFF;
+    border: 0;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    width: 66.5%;
+    height: 40px;
+    margin-top:10px;
+}
+.btn-default:hover,
+.btn-default:focus:active,
+.btn-default:focus,
+.btn-default:active{
+    background: #00796B;
+    color: #FFFFFF;
+}
+.btn-default:hover{
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
+}
+
+.footer{
+    margin-top: 30px;
+}
