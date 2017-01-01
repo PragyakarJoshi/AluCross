@@ -7,7 +7,7 @@
      Dark Primary: #00796B
      Primary: #009688
      Light Primary: #B2DFDB
-     Accent: #009688
+     Accent: #00968
      Text Primary: #212121
      Text Secondary: #757575
 */
@@ -58,9 +58,7 @@ body{
     cursor: pointer;
     box-shadow: 2px 2px 3px rgba(0,0,0,0.4);
 }
-.disabled{
 
-}
 .o{
     color: rgb(0, 255, 125) !important;
 }
@@ -90,4 +88,7 @@ body{
 
 .footer{
     margin-top: 30px;
+}
+.footer a{
+     color: #fff;
 }
