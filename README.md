@@ -1,3 +1,3 @@
 # AluCross
 
-TicTacToe Game made with JavaScript. Enjoy! :D
+Multiplayer TicTacToe Game made with JavaScript.
